@@ -1,0 +1,11 @@
+:root {
+    /* Colors */
+    --color-primary: #b4d9c2;
+    --color-secondary: #449064;
+    --color-tertiary: #6b8b84;
+    --color-gray: #ebebeb;
+
+    /* Fonts */
+    --ff-oswald: 'Oswald', sans-serif;
+    --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
+}

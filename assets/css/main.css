@@ -1,0 +1,9 @@
+/* File Imports */
+@import './utilities/normalize.css';
+@import './utilities/variables.css';
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Source+Sans+Pro:wght@200;400&display=swap);
+
+/* Mobile Styles */
+body {
+    /* background-color: var(--color-gray); */
+}
