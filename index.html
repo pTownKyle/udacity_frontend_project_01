@@ -5,76 +5,121 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Just My Thoughts</title>
+        <meta
+            name="description"
+            content="A Udacity Front End Developer Nanodegree Project"
+        />
         <link rel="stylesheet" href="/assets/css/main.css" />
     </head>
     <body>
-        <!-- Header Section -->
-        <header>
-            <span class="site_logo">Just My Thoughts</span>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/blog">Blog</a>
-            </nav>
-        </header>
+        <div class="container">
+            <!-- Header Section -->
+            <div class="navbar">
+                <span class="site_logo">
+                    <span>Just</span>
+                    <span>My Thoughts</span>
+                </span>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/blog/post.html">Blog</a>
+                </nav>
+            </div>
 
-        <!-- Main Content -->
-        <main>
-            <!-- Home Intro Section -->
-            <section class="home_intro">
-                <h1>Weird, Random, & WTF</h1>
-                <p>
-                    Children. Lynda, first of all, I'm not your answering
-                    service. Second of all, somebody named Greg or Craig called
-                    you just a little while ago. Lorraine, have you ever, uh,
-                    been in a situation where you know you had to act a certain
-                    way but when you got there, you didn't know if you could go
-                    through with it?
-                </p>
-            </section>
+            <!-- Main Content -->
+            <main>
+                <!-- Home Intro Section -->
+                <section class="home_intro">
+                    <h1>Weird, Random, & WTF</h1>
+                    <p>
+                        Children. Lynda, first of all, I'm not your answering
+                        service. Second of all, somebody named Greg or Craig
+                        called you just a little while ago. Lorraine, have you
+                        ever, uh, been in a situation where you know you had to
+                        act a certain way but when you got there, you didn't
+                        know if you could go through with it?
+                    </p>
+                </section>
 
-            <!-- Blog Entries Section -->
-            <section class="blog_entries">
-                <!-- Card / Post 01 -->
-                <div class="card">
-                    <figure>
-                        <img src="" alt="Post Photo" />
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nisi, ex soluta?
-                        </figcaption>
-                    </figure>
-                    <button>Read More</button>
-                </div>
+                <!-- Blog Entries Section -->
+                <section class="blog_entries">
+                    <!-- Card / Post 01 -->
+                    <div class="card">
+                        <figure>
+                            <picture>
+                                <source
+                                    srcset="https://via.placeholder.com/480x270"
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="https://via.placeholder.com/640x360"
+                                    media="(min-width: 1024px)"
+                                />
+                                <img
+                                    src="https://via.placeholder.com/320x180"
+                                    alt="Post Photo 01"
+                                />
+                            </picture>
+                            <figcaption>
+                                Armpit Music: A Guilty Pleasure
+                            </figcaption>
+                        </figure>
+                        <button>
+                            <a href="/blog/post.html">Read Full Post</a>
+                        </button>
+                    </div>
 
-                <!-- Card / Post 02 -->
-                <div class="card">
-                    <figure>
-                        <img src="" alt="Post Photo" />
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nisi, ex soluta?
-                        </figcaption>
-                    </figure>
-                    <button>Read More</button>
-                </div>
+                    <!-- Card / Post 02 -->
+                    <div class="card">
+                        <figure>
+                            <picture>
+                                <source
+                                    srcset="https://via.placeholder.com/480x270"
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="https://via.placeholder.com/640x360"
+                                    media="(min-width: 1024px)"
+                                />
+                                <img
+                                    src="https://via.placeholder.com/320x180"
+                                    alt="Post Photo 01"
+                                />
+                            </picture>
+                            <figcaption>We All Scratch In Public</figcaption>
+                        </figure>
+                        <button disabled>Coming Soon</button>
+                    </div>
 
-                <!-- Card / Post 03 -->
-                <div class="card">
-                    <figure>
-                        <img src="" alt="Post Photo" />
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Nisi, ex soluta?
-                        </figcaption>
-                    </figure>
-                    <button>Read More</button>
-                </div>
-            </section>
-        </main>
+                    <!-- Card / Post 03 -->
+                    <div class="card">
+                        <figure>
+                            <picture>
+                                <source
+                                    srcset="https://via.placeholder.com/480x270"
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="https://via.placeholder.com/640x360"
+                                    media="(min-width: 1024px)"
+                                />
+                                <img
+                                    src="https://via.placeholder.com/320x180"
+                                    alt="Post Photo 01"
+                                />
+                            </picture>
+                            <figcaption>
+                                The Art Of Gourmet Leftovers
+                            </figcaption>
+                        </figure>
+                        <button disabled>Coming Soon</button>
+                    </div>
+                </section>
+            </main>
 
-        <!-- Footer Section -->
-        <footer>
-            <p>© 2022 Just My Thoughts</p>
-        </footer>
+            <!-- Footer Section -->
+            <footer>
+                <p>© 2022 Just My Thoughts</p>
+            </footer>
+        </div>
     </body>
 </html>
