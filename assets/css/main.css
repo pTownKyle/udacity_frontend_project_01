@@ -14,7 +14,7 @@ body {
     height: 100%;
 }
 
-/* Mobile Styles */
+/* Mobile-First Styles */
 .container {
     min-height: 100vh;
     display: grid;
@@ -42,6 +42,7 @@ body {
     text-transform: uppercase;
     align-items: center;
     color: var(--color-tertiary);
+    text-decoration: none;
 }
 
 nav a {
@@ -63,7 +64,7 @@ nav a:visited {
 main {
     display: grid;
     grid: auto / 1fr;
-    grid-gap: 1rem;
+    gap: 1rem;
     justify-items: center;
     margin-bottom: 1rem;
     padding: 0 1rem;
@@ -72,6 +73,7 @@ main {
 .home_intro,
 .post_intro {
     width: 90%;
+    margin-bottom: 2rem;
 }
 
 .home_intro h1,
@@ -87,7 +89,6 @@ main {
 .home_intro p {
     padding: 0 1rem;
     font-size: 1rem;
-    margin-bottom: 1rem;
 }
 
 .post_intro time {
@@ -109,7 +110,7 @@ main {
 .blog_entries {
     display: grid;
     grid: auto / 1fr;
-    grid-gap: 2rem;
+    gap: 2rem;
     justify-items: center;
     margin-bottom: 1rem;
     padding: 0 1rem;
@@ -122,7 +123,7 @@ main {
     padding: 1rem;
     border-radius: 0.3rem;
     box-shadow: 0.3rem 0.3rem 0.4rem 0.3rem rgba(0, 0, 0, 0.2);
-    height: max-content;
+    /* height: max-content; */
 }
 
 .card figure {
@@ -130,6 +131,7 @@ main {
 }
 
 .card img {
+    width: 90%;
     margin-bottom: 1rem;
 }
 
@@ -171,7 +173,7 @@ main {
 article {
     display: grid;
     grid: auto / 1fr;
-    grid-gap: 1rem;
+    gap: 1rem;
     justify-items: center;
     margin-bottom: 1rem;
     padding: 0 1rem;
@@ -183,9 +185,14 @@ article {
     align-items: center;
 }
 
+.post_entry picture {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .post_entry img {
     width: 80%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .post_entry h2 {
@@ -215,12 +222,15 @@ article {
     border-radius: 0.3rem;
 }
 
+.post_author picture {
+    text-align: center;
+}
+
 .post_author img {
-    width: 30%;
+    width: 50%;
     object-fit: scale-down;
     border-radius: 100%;
     margin: 0.6rem 0;
-    padding: 0.3rem;
 }
 
 .post_author h3 {
@@ -309,6 +319,10 @@ footer {
         font-size: 1.5rem;
     }
 
+    .blog_entries {
+        gap: 3rem;
+    }
+
     .card figcaption {
         font-size: 2rem;
     }
@@ -323,7 +337,7 @@ footer {
 
     .post_intro blockquote {
         font-size: 1.2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .post_entry {
@@ -336,6 +350,7 @@ footer {
 
     .post_entry p {
         font-size: 1.2rem;
+        margin-bottom: 1.5rem;
     }
 
     .post_author {
@@ -361,5 +376,89 @@ footer {
 
     footer {
         font-size: 1.2rem;
+    }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+    .site_logo {
+        font-size: 2.2rem;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+    }
+
+    .home_intro {
+        margin-bottom: 2rem;
+    }
+
+    .home_intro h1,
+    .post_intro h1 {
+        font-size: 3.5rem;
+    }
+
+    .home_intro p {
+        font-size: 1.8rem;
+        width: 75ch;
+        margin: 0 auto;
+    }
+
+    .blog_entries {
+        grid: 1fr 1fr / 1fr 1fr;
+    }
+
+    .card figcaption {
+        font-size: 2.3rem;
+    }
+
+    .card button {
+        font-size: 1.8rem;
+    }
+
+    .post_intro time {
+        font-size: 1.5rem;
+    }
+
+    .post_intro blockquote {
+        font-size: 1.5rem;
+        width: 60ch;
+        margin: 3rem auto 1.5rem auto;
+    }
+
+    .post_entry h2 {
+        font-size: 2.3rem;
+    }
+
+    .post_entry p {
+        font-size: 1.5rem;
+        width: 75ch;
+    }
+
+    .post_author {
+        width: 65%;
+    }
+
+    .post_author img {
+        width: 75%;
+        margin-bottom: 1.5rem;
+    }
+
+    .post_author h3 {
+        font-size: 2.2rem;
+    }
+
+    .post_author p {
+        font-size: 1.5rem;
+        width: 60ch;
+    }
+
+    .author_socials a > img {
+        width: 4rem;
+    }
+
+    footer {
+        font-size: 1.5rem;
     }
 }
